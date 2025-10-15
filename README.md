@@ -17,3 +17,5 @@ Para probar el otro funcionamiento, haré commit ahora desde prueba2, me iré a 
 
 Luego haré git merge prueba2, y cuando hagamos git log --graph --all, veremos la bifurcación que se produce para mergear prueba2 al final de mastere, gracias a que master tuvo un commit nuevo antes de mergear prueba2.
 
+
+Simplemente en prueba3 edito esta línea para probar a hacer ahora git rebase main
