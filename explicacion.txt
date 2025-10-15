@@ -1,0 +1,14 @@
+**Fast Forward con subrama prueba1**
+Cree la subrama prueba1, cree en ella un archivo vacío 1.txt y modifiqué el README. Hice commit, y luego volví a master e hice git merge prueba1.
+
+Resultado -> merge Fast Forward, como master no tenía nuevos commits simplemente movemos su puntero al del último commit de prueba1.
+
+
+**Merge con prueba2**
+Creamos rama prueba2, nuevo fichero 2.txt y editamos de nuevo el README. Hacemos commit, y volvemos a la rama master. En master, editamos README, y hacemos commit. De momento no vamos a tener errores, pero si hacemos git merge prueba2, nos va a dar un conflicto, ya que tanto en la rama master como en prueba2 hemos editado el mismo fichero README.
+
+Podemos quedarnos con el contenido de uno de los 2, de los 2, o crear uno nuevo; yo me quedé con el de los 2, luego hacemos commit, y se nos resolverá automáticamente el merge.
+
+Si vamos a insights -> network en github, veremos el gráfico, y cómo prueba1 simplemente se convierte en "un commit de master", y como de prueba2 sale una flecha colocándolo en rama master al final.
+
+Si hacemos git log --graph --all, también veremos cómo se produce bifurcación en las ramas con prueba2 pero no con prueba1.
